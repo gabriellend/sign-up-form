@@ -77,3 +77,19 @@ body {
   flex-direction: column;
   background-color: white;
 }
+
+.right-top {
+  flex: 1;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.right-middle {
+  height: 30%;
+}
+
+.right-bottom {
+  flex: 1;
+}
