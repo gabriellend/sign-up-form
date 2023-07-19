@@ -1,2 +1,63 @@
+* {
+  border: 1px solid black;
+}
+
+@font-face {
+  font-family: "Norse Bold";
+  src: url("assets/Norse-Bold.otf") format("opentype");
+}
+
+html,
 body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  max-width: 80vw;
+  margin: auto;
+  /* background-color: black; */
+}
+
+.left {
+  flex: 1.25;
+  position: relative;
+  background-image: url("assets/ferns.jpg");
+}
+
+.left-overlay {
+  display: flex;
+  position: absolute;
+  top: 150px;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px 0;
+}
+
+.left-icon {
+  height: 100%;
+}
+
+.left-name {
+  font-family: "Norse Bold";
+  font-size: 5rem;
+  color: white;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
 }
