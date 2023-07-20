@@ -48,7 +48,7 @@ main {
 .left-overlay {
   display: flex;
   position: absolute;
-  top: 170px;
+  top: 167px;
   width: 100%;
   height: 90px;
   align-items: center;
@@ -126,23 +126,23 @@ main {
   }
 
   .left-overlay {
-    top: 12vw;
-    height: 6vw;
+    top: 15.75vw;
+    height: 8vw;
     padding: 1vw 0;
   }
 
   .left-title {
-    font-size: 5vw;
-    padding-top: 1vw;
+    font-size: 6.75vw;
+    padding-top: 1.8vw;
   }
 
   .left-photo-credit {
-    font-size: 1vw;
+    font-size: 1.1vw;
   }
 
   .right-top {
-    padding: 0 8vw 3.5vw 2.5vw;
-    gap: 1.5vw;
-    font-size: 1.2vw;
+    padding: 0 8.5vw 4.5vw 3.5vw;
+    gap: 1.8vw;
+    font-size: 1.63vw;
   }
 }
