@@ -109,6 +109,11 @@ main {
 .right-middle {
   height: 33%;
   background-color: white;
+  padding: 10px 35px 30px 35px;
+}
+
+.right-middle p {
+  font: bold 1.06rem Arial, Helvetica, sans-serif;
 }
 
 .right-bottom {
