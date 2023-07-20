@@ -7,6 +7,12 @@
   src: url("assets/Norse-Bold.otf") format("opentype");
 }
 
+:root {
+  --ratio: 764 / 1075;
+  --width: 100vw;
+  --height: calc(var(--width) * var(--ratio));
+}
+
 html,
 body {
   margin: 0;
@@ -19,10 +25,14 @@ body {
   background-color: black;
 }
 
+.start-panel,
+.end-panel {
+  flex: 1;
+}
+
 main {
   display: flex;
   max-width: 1075px;
-  margin: 0 auto;
 }
 
 .left {
@@ -107,19 +117,32 @@ main {
 }
 
 @media (max-width: 1075px) {
-  .main::before,
-  .main::after {
-    content: "";
-    display: block;
+  body {
+    flex-direction: column;
   }
 
-  .main::before {
-    /* Aspect ratio (1075:764) */
-    padding-top: calc((1075 / 764) * 100%);
+  main {
+    height: var(--height);
   }
 
-  .main::after {
-    /* Add padding at the bottom (same aspect ratio) */
-    padding-bottom: calc((1075 / 764) * 100%);
+  .left-overlay {
+    top: 12vw;
+    height: 6vw;
+    padding: 1vw 0;
+  }
+
+  .left-title {
+    font-size: 5vw;
+    padding-top: 1vw;
+  }
+
+  .left-photo-credit {
+    font-size: 1vw;
+  }
+
+  .right-top {
+    padding: 0 8vw 3.5vw 2.5vw;
+    gap: 1.5vw;
+    font-size: 1.2vw;
   }
 }
