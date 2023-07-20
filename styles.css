@@ -130,6 +130,10 @@ main {
     height: var(--height);
   }
 
+  .left {
+    background-position: -5.5vw;
+  }
+
   .left-overlay {
     top: 15.75vw;
     height: 8vw;
