@@ -129,20 +129,19 @@ main {
 .right-middle-form {
   flex: 1;
   display: flex;
-  gap: 55px;
+  flex-direction: column;
+  gap: 18px;
   width: 450px;
 }
 
-.left-form-group,
-.right-form-group {
+.form-group {
   display: flex;
-  flex-direction: column;
-  flex: 1;
-  gap: 18px;
+  gap: 55px;
 }
 
-.left-form-wrapper {
+.form-input-wrapper {
   display: flex;
+  flex: 1;
   flex-direction: column;
   gap: 1px;
 }
@@ -245,16 +244,15 @@ main {
   }
 
   .right-middle-form {
-    gap: 5vw;
+    gap: 1.7vw;
     width: 42vw;
   }
 
-  .left-form-group,
-  .right-form-group {
-    gap: 1.7vw;
+  .form-group {
+    gap: 5.25vw;
   }
 
-  .left-form-wrapper {
+  .form-input-wrapper {
     gap: 0.1vw;
   }
 
@@ -266,7 +264,6 @@ main {
   .right-middle-form input {
     border-width: 0.1vw;
     padding: 0.33vw 0.48vw;
-    /* width: 18vw; */
     font-size: 1.25vw;
   }
 
