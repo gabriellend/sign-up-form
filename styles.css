@@ -21,6 +21,7 @@ body {
 
 body {
   display: flex;
+  align-items: center;
   min-height: 100vh;
   background-color: black;
 }
@@ -33,6 +34,7 @@ body {
 main {
   display: flex;
   max-width: 1075px;
+  height: 764px;
 }
 
 .left {
