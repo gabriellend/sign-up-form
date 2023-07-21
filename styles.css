@@ -87,6 +87,8 @@ main {
   flex: 2;
   display: flex;
   flex-direction: column;
+  font: bold 1.06rem Arial, Helvetica, sans-serif;
+  color: rgb(34, 42, 55);
 }
 
 .right-top {
@@ -97,8 +99,6 @@ main {
   flex-direction: column;
   gap: 20px;
   background-color: rgb(247, 249, 250);
-  color: rgb(9, 9, 9);
-  font: bold 1.06rem Arial, Helvetica, sans-serif;
   line-height: 1.2;
 }
 
@@ -107,13 +107,57 @@ main {
 }
 
 .right-middle {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   height: 33%;
   background-color: white;
-  padding: 10px 35px 30px 35px;
+  padding: 10px 180px 30px 35px;
 }
 
-.right-middle p {
+.right-middle-header {
   font: bold 1.06rem Arial, Helvetica, sans-serif;
+}
+
+.right-middle-form {
+  flex: 1;
+  display: flex;
+  gap: 45px;
+}
+
+.left-form-group,
+.right-form-group {
+  flex: 1;
+  /* display: flex;
+  flex-direction: column; */
+  gap: 15px;
+}
+
+.right-middle-form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-middle-form label {
+  display: block;
+  letter-spacing: 1px;
+  font-size: 0.55rem;
+  color: rgb(75, 81, 92);
+}
+
+.right-middle-form input {
+  flex: 1;
+  display: block;
+  border-radius: 3px;
+  border: 1px solid rgb(236, 237, 240);
+  padding: 4px 5px;
+}
+
+.right-middle-form input:focus {
+  outline: 1px solid rgb(40, 93, 197);
+  box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 3px 3px 6px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 22px -9px rgba(0, 0, 0, 0.75);
 }
 
 .right-bottom {
