@@ -162,27 +162,21 @@ main {
 }
 
 .right-middle-form input.invalid {
-  outline: 1px solid red;
+  outline: 1px solid rgb(189, 64, 70);
 }
 
 .right-middle-form span {
   display: block;
   position: relative;
   content: attr(data-error-message);
-  top: 0px;
-  left: 0px;
-  padding: 0;
-  color: red;
+  height: 10.5px;
+  color: rgb(189, 64, 70);
   font-size: 0.55rem;
   visibility: hidden;
 }
 
 .right-middle-form input.invalid + span {
   visibility: visible;
-}
-
-.right-middle-form .spacer {
-  height: 10.5px;
 }
 
 .right-middle-form input.not-submitted {
@@ -301,9 +295,6 @@ main {
 
   .right-middle-form span {
     font-size: 0.81vw;
-  }
-
-  .right-middle-form .spacer {
     height: 0.8vw;
   }
 
