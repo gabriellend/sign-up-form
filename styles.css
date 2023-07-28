@@ -161,15 +161,19 @@ main {
   padding: 3.5px 5px;
 }
 
+.right-middle-form input:invalid {
+  outline: 1px solid red;
+}
+
+.right-middle-form input.not-submitted {
+  outline: none;
+}
+
 .right-middle-form input:focus {
   outline: 1px solid rgb(40, 93, 197);
   box-shadow: 3px 3px 6px -3px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 3px 3px 6px -3px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 3px 3px 6px -3px rgba(0, 0, 0, 0.75);
-}
-
-.right-middle-form input:invalid {
-  outline: 1px solid red;
 }
 
 .right-bottom {
