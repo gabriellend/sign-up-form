@@ -130,7 +130,7 @@ main {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 10px;
   width: 450px;
 }
 
@@ -161,8 +161,28 @@ main {
   padding: 3.5px 5px;
 }
 
-.right-middle-form input:invalid {
+.right-middle-form input.invalid {
   outline: 1px solid red;
+}
+
+.right-middle-form span {
+  display: block;
+  position: relative;
+  content: attr(data-error-message);
+  top: 0px;
+  left: 0px;
+  padding: 0;
+  color: red;
+  font-size: 0.55rem;
+  visibility: hidden;
+}
+
+.right-middle-form input.invalid + span {
+  visibility: visible;
+}
+
+.right-middle-form .spacer {
+  height: 10.5px;
 }
 
 .right-middle-form input.not-submitted {
@@ -256,7 +276,7 @@ main {
   }
 
   .right-middle-form {
-    gap: 1.7vw;
+    gap: 1vw;
     width: 42vw;
   }
 
@@ -279,11 +299,23 @@ main {
     font-size: 1.25vw;
   }
 
+  .right-middle-form span {
+    font-size: 0.81vw;
+  }
+
+  .right-middle-form .spacer {
+    height: 0.8vw;
+  }
+
   .right-middle-form input:focus {
     outline-width: 0.1vw;
     box-shadow: 0.3vw 0.3vw 0.6vw -0.3vw rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 0.3vw 0.3vw 0.6vw -0.3vw rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0.3vw 0.3vw 0.6vw -0.3vw rgba(0, 0, 0, 0.75);
+  }
+
+  .right-middle-form input:invalid {
+    outline-width: 0.11vw;
   }
 
   .right-bottom {

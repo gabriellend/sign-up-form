@@ -5,9 +5,16 @@ const inputs = document.querySelectorAll("input");
 
 // FUNCTIONS
 const submitForm = (e) => {
+  e.preventDefault();
   if (form.checkValidity()) {
     inputs.forEach((input) => input.classList.remove("not-submitted"));
-    e.preventDefault();
+  } else {
+    inputs.forEach((input) => {
+      input.classList.remove("not-submitted");
+      if (!input.validity.valid) {
+        input.classList.add("invalid");
+      }
+    });
   }
 };
 
