@@ -15,14 +15,15 @@ const submitForm = (e) => {
       // This is to remove the styles, not ideal
       input.classList.remove("not-submitted");
       errorMessageSpan = input.nextElementSibling;
+      const validityState = input.validity;
 
-      if (!input.validity.valid) {
+      if (!validityState.valid) {
         input.classList.add("invalid");
-        if (input.validity.typeMismatch) {
+        if (validityState.typeMismatch) {
           errorMessageSpan.innerText = "* Please enter a valid email";
-        } else if (input.id === "phone-number" && input.validity.tooShort) {
+        } else if (input.id === "phone-number" && validityState.tooShort) {
           errorMessageSpan.innerText = "* Please enter a 10 digit phone number";
-        } else if (input.validity.valueMissing) {
+        } else if (validityState.valueMissing) {
           errorMessageSpan.innerText = "* Please enter a value";
         }
       }
@@ -37,6 +38,8 @@ const submitForm = (e) => {
     if (passwordInput.value.length > 0 && passwordInput.value.length < 8) {
       errorMessageSpan.innerText = "* Password must be at least 8 characters";
     } else if (passwordInput.value !== confirmPassInput.value) {
+      // As long as a password is present, the input will be valid. To get it
+      // to display, we must add the "invalid" class
       passwordInput.classList.add("invalid");
       errorMessageSpan.innerText = "* Passwords do not match";
     }
