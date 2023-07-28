@@ -168,6 +168,10 @@ main {
   -moz-box-shadow: 3px 3px 6px -3px rgba(0, 0, 0, 0.75);
 }
 
+.right-middle-form input:invalid {
+  outline: 1px solid red;
+}
+
 .right-bottom {
   display: flex;
   flex-direction: column;
@@ -189,6 +193,10 @@ main {
   box-shadow: 3px 3px 6px -3px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 3px 3px 6px -3px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 3px 3px 6px -3px rgba(0, 0, 0, 0.75);
+}
+
+.right-bottom button:active {
+  box-shadow: none;
 }
 
 .right-bottom a {
